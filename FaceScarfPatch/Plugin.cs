@@ -24,7 +24,7 @@ namespace FaceScarfPatch
                 {
                     if (cos.transform.parent.name == "head")
                     {
-                        cos.SetActive(false);
+                        cos.GetComponent<Renderer>().forceRenderingOff = true;
                     }
                 }
             }
